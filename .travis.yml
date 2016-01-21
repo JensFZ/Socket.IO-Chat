@@ -1,0 +1,16 @@
+sudo: false
+before_install:
+  - npm install -g npm@'>=1.4.3'
+language: node_js
+node_js:
+  - "0.8"
+  - "0.10"
+  - "0.12"
+  - "4.0"
+  - "5.0"
+  - "5.5"
+git:
+  depth: 1
+notifications:
+  email:
+    - JensFZ@gmx.de
