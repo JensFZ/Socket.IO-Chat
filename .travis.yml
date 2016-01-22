@@ -11,6 +11,3 @@ node_js:
   - "5.5"
 git:
   depth: 1
-notifications:
-  email:
-    - JensFZ@gmx.de
