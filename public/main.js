@@ -26,6 +26,7 @@ $(function() {
   var $currentInput = $usernameInput.focus();
 
   var socket = io();
+  var soundNewMessage = new Audio('sound/newMessage.mp3');
 
   function addParticipantsMessage (data) {
     var message = '';
@@ -98,6 +99,7 @@ $(function() {
       .append($usernameDiv, $messageBodyDiv);
 
     addMessageElement($messageDiv, options);
+    soundNewMessage.play();
   }
 
   // Adds the visual chat typing message
